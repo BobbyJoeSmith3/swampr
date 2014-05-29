@@ -1,0 +1,33 @@
+/* swampr_style.css */
+
+#thephrase {
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 40px;
+}
+
+.post_title {
+	font-weight: bold;
+	display: inline-block;
+}
+
+.post_author {
+	font-style: italic;
+	display: inline-block;
+}
+
+.post_holder {
+	padding: 7px;
+	border-style: ridge;
+	border-width: 5px;
+	border-color: #baac91;
+
+}
+
+.post_gold {
+	background-color: #baac91;
+	color: white;
+	border-color: white;
+	padding: 7px;
+	border-style: ridge;
+	border-width: 5px;
+}
