@@ -9,13 +9,28 @@
 	<body>
 		<div id="thephrase"> Hello, world! </div>
 
-
-		{% for post in posts %}
+		<!-- This was from the first example -->
+		<!-- {% for post in posts %}
 		<div {% if post.author == "Dr. Angelou" %} class="post_gold" {% else %} class="post_holder" {% endif %}><p><p><div class="post_title">{{post.title}} </div> - Posted by <div class="post_author">{{post.author}} </div></p>
 		<p>{{post.content}}</p></p></div>
 		<br>
+		{% endfor %} -->
+
+		{% for fellow in users: %}
+			<div class= "post_holder">
+				<p><span class ="post_author">{{fellow.username}}</span><br> <span class = "post_author">({{fellow.lastname}}, {{fellow.firstname}}) </p>
+			
+
+			{% for post in posts: %}
+				{% if post.author == fellow.id %}
+				<p><span class="post_title">{{post.title}}</span></p>
+				<br><p>{{post.content}}</p>
+				{% endif %}
+			{% endfor %}
+			</div>
 		{% endfor %}
-		
+
+
 
 	</body>
 

@@ -17,8 +17,9 @@
 
 .post_holder {
 	padding: 7px;
+	margin: 2px;
 	border-style: ridge;
-	border-width: 5px;
+	border-width: 2px;
 	border-color: #baac91;
 
 }

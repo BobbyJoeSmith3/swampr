@@ -1,0 +1,22 @@
+<!--add_post.html -->
+
+<html>
+	<head>
+
+
+	</head>
+
+
+	<body>
+		<h1>Add a new post by filling out this form:</h1>
+			<form action="" method="post" name="newuser">
+				{{form.hidden_tag()}}	<!-- Enables CSRF protection -->
+				Title: {{ form.title(size=100) }}
+				<br>Content: {{ form.content(size=30) }}
+				<br><input type="submit" value="Submit (Add this post)">
+			</form>
+
+	</body>
+
+
+</html>

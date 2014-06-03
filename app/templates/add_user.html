@@ -1,0 +1,23 @@
+<!--add_user.html -->
+
+<html>
+	<head>
+
+
+	</head>
+
+
+	<body>
+		<h1>Add a new user by filling out this form:</h1>
+			<form action="" method="post" name="newuser">
+				{{form.hidden_tag()}}	<!-- Enables CSRF protection -->
+				Firstname: {{ form.firstname(size=30) }}
+				<br>Lastname: {{ form.lastname(size=30) }}
+				<br>Username: {{ form.username(size=30) }}
+				<br><input type="submit" value="Submit (Add this user)">
+			</form>
+
+	</body>
+
+
+</html>
